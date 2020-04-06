@@ -1,0 +1,45 @@
+alias composer='composer.phar'
+
+# some more ls aliases
+alias ll='ls -alFh'
+alias la='ls -A'
+alias l='ls -CF'
+alias c='clear'
+
+# docker aliases
+alias dps='docker ps'
+alias dcx='docker-compose exec'
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dce='docker-compose stop'
+alias dcs='docker-compose start'
+alias dcps='docker-compose ps'
+
+# git aliases
+alias rgls="find ./ -maxdepth 1 -type d -not -path '.*/' -exec sh -c '([ -d {}/.git ] && echo {} status: && cd {} && git status -s && echo)' \;"
+alias gad='git add'
+alias gcm='git commit -m'
+alias gp='git push'
+alias gpl='git pull'
+alias gls='clear && git status -s .'
+alias glsa='clear && git status -s'
+alias gck='git checkout'
+alias gbr='git branch'
+alias gdf='git diff'
+
+# opencart shortcuts
+mk-oc-project() {
+  MODULE_NAME=${1:-${PWD##*/}}
+  TPL=${2:-twig}
+  mkdir -p "${PWD}"/upload/{{catalog,admin}/{controller,model,language/{en-gb,ru-ru}},catalog/view/theme/default/template,admin/view/template}/extension/module
+  touch "${PWD}"/upload/{admin/view,catalog/view/theme/default}/template/extension/module/"${MODULE_NAME}.${TPL}"
+  touch "${PWD}"/upload/{admin,catalog}/{controller,model,language/{ru-ru,en-gb}}/extension/module/"${MODULE_NAME}".php
+}
+
+dirs-size() {
+  DIR_PATH=${1:-${PWD}}
+  find ${DIR_PATH} -maxdepth 1 -type d -not -name "\.*" -exec du -hs {} \; | sort -hr
+}
+
+# dotfiles git
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
