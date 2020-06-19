@@ -66,7 +66,7 @@ group_lazy_load() {
 }
 
 export NVM_DIR=~/.nvm
-group_lazy_load $HOME/.nvm/nvm.sh nvm node npm truffle gulp npx adonis
+group_lazy_load $HOME/.nvm/nvm.sh nvm node yarn npm truffle gulp npx adonis
 
 unset -f group_lazy_load
 
@@ -80,3 +80,4 @@ if which ruby >/dev/null && which gem >/dev/null; then
   PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
 
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
