@@ -9,7 +9,7 @@
 # Select what modules you would like enabled.
 # The second line of modules may depend on options set by modules in the first
 # line. These dependencies are noted on the respective module's README.md.
-zmodules=( syntax-highlighting directory environment git-info history input utility custom \
+zmodules=( syntax-highlighting directory environment history input custom \
           prompt completion autosuggestions )
 
 
@@ -49,7 +49,7 @@ zprompt_theme='minimal'
 #
 
 # Set the string below to the desired terminal title format string.
-# The terminal title is redrawn upon directory change, however, variables like 
+# The terminal title is redrawn upon directory change, however, variables like
 # ${PWD} are only evaluated once. Use prompt expansion strings for dynamic data:
 #   http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
 # The example below uses the following format: 'username@host:/current/directory'
@@ -73,5 +73,5 @@ zinput_mode='emacs'
 # This determines what highlighters will be used with the syntax-highlighting module.
 # Documentation of the highlighters can be found here:
 #   https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
-zhighlighters=(main brackets)
+# zhighlighters=(main brackets)
 
