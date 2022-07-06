@@ -1,5 +1,6 @@
 # zmodload zsh/zprof
 export LANG=en_US.UTF-8
+export CLICOLOR=Y
 
 # User configuration
 
@@ -14,13 +15,16 @@ export PATH="${PATH}:/usr/local/bin:${HOME}/.bin:${HOME}/.gem/ruby/2.3.0/bin:${G
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 # zsh config
-ZSH_THEME="eriner"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#777'
+#ZSH_THEME="eriner"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan,underline"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-unsetopt SHARE_HISTORY
+#unsetopt SHARE_HISTORY
+setopt noincappendhistory
+#setopt nosharehistory
+setopt appendhistory
 
 # Start zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh

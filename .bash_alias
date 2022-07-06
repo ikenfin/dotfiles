@@ -23,12 +23,14 @@ alias dcps='docker-compose ps'
 alias rgls="find ./ -maxdepth 1 -type d -not -path '.*/' -exec sh -c '([ -d {}/.git ] && echo {} status: && cd {} && git status -s && echo)' \;"
 alias gad='git add'
 alias gcm='git commit -m'
+alias gca='git commit --amend'
 alias gp='git push'
 alias gpl='git pull'
 alias gls='clear && git status -s .'
 alias glsa='clear && git status -s'
 alias gck='git checkout'
-alias gbr='git branch'
+alias gbra='git branch'
+alias gbr='git branch --show-current'
 alias gdf='git diff'
 
 # dotfiles git
