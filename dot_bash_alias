@@ -33,5 +33,6 @@ alias gbra='git branch'
 alias gbr='git branch --show-current'
 alias gdf='git diff'
 
+# DEPRECATED - MOVED TO CHEZMOI
 # dotfiles git
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
