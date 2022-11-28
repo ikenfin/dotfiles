@@ -1,3 +1,7 @@
+# shortcut functions
+function make_dir_and_cd_to_it () { mkdir "$@"; cd "$_"; }
+function go_back_n_times () { printf -v gbnt_txt "%${1}s"; cd ${gbnt_txt// /../}; unset gbnt_txt; }
+
 # typora
 alias typora="open -a typora"
 
@@ -9,6 +13,10 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
+
+# other
+alias md='make_dir_and_cd_to_it'
+alias cdb='go_back_n_times'
 
 # docker aliases
 alias dps='docker ps'
