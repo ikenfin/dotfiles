@@ -32,7 +32,7 @@ alias dcps='docker-compose ps'
 
 # git aliases
 alias rgls="__for_each_nested_git_repo_dir_execute ./ 'git -C {} status -s'"
-alias rgbr="__for_each_nested_git_repo_dir_execute ./ 'echo -ne \"{}\t\" && git -C {} branch --show-current'"
+alias rgbr="__for_each_nested_git_repo_dir_execute ./ 'echo -ne \"{}\t\" && git -C {} branch --show-current' | column -t"
 alias gad='git add'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
