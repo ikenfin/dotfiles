@@ -29,6 +29,7 @@ alias dcps='docker-compose ps'
 
 # git aliases
 alias rgls="find ./ -maxdepth 1 -type d -not -path '.*/' -exec sh -c '([ -d {}/.git ] && echo {} status: && cd {} && git status -s && echo)' \;"
+alias rgbr="find ./ -maxdepth 1 -type d -not -path '.*/' -exec sh -c '([ -d {}/.git ] && echo {} status: && cd {} && git branch && echo)' \;"
 alias gad='git add'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
