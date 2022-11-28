@@ -2,6 +2,9 @@
 function make_dir_and_cd_to_it () { mkdir "$@"; cd "$_"; }
 function go_back_n_times () { printf -v gbnt_txt "%${1}s"; cd ${gbnt_txt// /../}; unset gbnt_txt; }
 
+# git based shortcuts
+function __for_each_nested_git_repo_dir_execute () { find "${1}" -maxdepth 1 -type d -not -path '.*/' -exec sh -c "([ -d \"{}/.git\" ] && ${2})" \;; }
+
 # typora
 alias typora="open -a typora"
 
@@ -28,8 +31,8 @@ alias dcs='docker-compose start'
 alias dcps='docker-compose ps'
 
 # git aliases
-alias rgls="find ./ -maxdepth 1 -type d -not -path '.*/' -exec sh -c '([ -d {}/.git ] && echo {} status: && cd {} && git status -s && echo)' \;"
-alias rgbr="find ./ -maxdepth 1 -type d -not -path '.*/' -exec sh -c '([ -d {}/.git ] && echo {} status: && cd {} && git branch && echo)' \;"
+alias rgls="__for_each_nested_git_repo_dir_execute ./ 'git -C {} status -s'"
+alias rgbr="__for_each_nested_git_repo_dir_execute ./ 'echo -ne \"{}\t\" && git -C {} branch --show-current'"
 alias gad='git add'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
