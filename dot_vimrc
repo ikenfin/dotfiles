@@ -1,7 +1,7 @@
 set mouse=v
 
-:hi CursorLine cterm=NONE ctermbg=lightgray ctermfg=black guibg=orange guifg=black
-:hi CursorColumn cterm=NONE ctermbg=green ctermfg=white guibg=orange guifg=black
+:hi CursorLine cterm=NONE ctermbg=green ctermfg=black guibg=orange guifg=black
+:hi CursorColumn cterm=NONE ctermbg=green ctermfg=black guibg=orange guifg=black
 
 :nnoremap <Leader><Leader> :set cursorline! cursorcolumn! number!<CR>
 

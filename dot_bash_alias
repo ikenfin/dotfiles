@@ -26,7 +26,7 @@ alias dps='docker ps'
 alias dcx='docker-compose exec'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
-alias dce='docker-compose stop'
+alias dce='docker-compose exec'
 alias dcs='docker-compose start'
 alias dcps='docker-compose ps'
 
