@@ -1,0 +1,18 @@
+format = '''$directory$character'''
+right_format = '''$git_branch$time'''
+add_newline = false
+
+[time]
+disabled = false
+format = '[\[ $time \]]($style) '
+time_format = '%T'
+utc_time_offset = '+4'
+time_range = '10:00:00-14:00:00'
+style = 'blue'
+
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
+style = 'bold green'
+
+#[character]
+#success_symbol = '[➜](bold green)'

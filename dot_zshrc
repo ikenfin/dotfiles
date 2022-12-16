@@ -1,0 +1,28 @@
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored
+zstyle :compinstall filename '/home/ken/.zshrc'
+
+autoload -Uz compinit 
+compinit
+
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+#
+
+# Load bash aliases
+[[ -s ${HOME}/.bash_alias ]] && source ${HOME}/.bash_alias
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
+
+# Init starship
+export STARSHIP_CONFIG=~/.config/starship.toml
+eval "$(starship init zsh)"
