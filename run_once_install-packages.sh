@@ -5,3 +5,7 @@
 tmux source ~/.tmux.conf
 
 sh ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+
+# Install starship
+curl -sS https://starship.rs/install.sh | sh
+
