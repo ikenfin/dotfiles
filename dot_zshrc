@@ -16,6 +16,9 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 #
 
+# Add .local/bin to PATH
+PATH="${PATH}:${HOME}/.local/bin"
+
 # Load bash aliases
 [[ -s ${HOME}/.bash_alias ]] && source ${HOME}/.bash_alias
 
