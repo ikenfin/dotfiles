@@ -29,3 +29,6 @@ export NVM_DIR="$HOME/.nvm"
 # Init starship
 export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init zsh)"
+
+# Init autocomplete
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
