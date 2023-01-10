@@ -33,3 +33,11 @@ eval "$(starship init zsh)"
 # Init autocomplete
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,bold,underline"
+
+# Fix zsh keymap
+bindkey "\e[3~" "delete-char" 
+bindkey "[1;5C" forward-word
+bindkey "[1;5D" backward-word
+
+
+
