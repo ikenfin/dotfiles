@@ -29,6 +29,7 @@ alias dcd='docker-compose down'
 alias dce='docker-compose exec'
 alias dcs='docker-compose start'
 alias dcps='docker-compose ps'
+alias dcl='docker-compose logs'
 
 # git aliases
 alias rgls="__for_each_nested_git_repo_dir_execute ./ 'git -C {} status -s'"
