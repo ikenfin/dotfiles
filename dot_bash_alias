@@ -1,11 +1,12 @@
 # shortcut functions
-function make_dir_and_cd_to_it () { mkdir "$@"; cd "$_"; }
+function make_dir_and_cd_to_it () { mkdir -p "$@"; cd "$_"; }
 function go_back_n_times () { printf -v gbnt_txt "%${1}s"; cd ${gbnt_txt// /../}; unset gbnt_txt; }
 
 # git based shortcuts
-function __for_each_nested_git_repo_dir_execute () { find "${1}" -maxdepth 1 -type d -not -path '.*/' -exec sh -c "([ -d \"{}/.git\" ] && ${2})" \;; }
+function __for_each_nested_git_repo_dir_execute () { find "${1}" -maxdepth 1 -type d -not -path '\.*/' -exec sh -c "([ -d \"{}/.git\" ] && ${2})" \;; }
 
 # typora
+alias open="xdg-open"
 alias typora="open -a typora"
 
 # composer
@@ -16,10 +17,9 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
-
 # other
-alias md='make_dir_and_cd_to_it'
-alias cdb='go_back_n_times'
+alias duh='du -sh * | sort -h'
+alias md='function () { mkdir -p "$@"; cd "$_"; }'
 
 # docker aliases
 alias dps='docker ps'
@@ -33,7 +33,7 @@ alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f --tail=50'
 
 # git aliases
-alias rgls="__for_each_nested_git_repo_dir_execute ./ 'git -C {} status -s'"
+alias rgls="__for_each_nested_git_repo_dir_execute ./ 'echo {} && git -C {} status -s'"
 alias rgbr="__for_each_nested_git_repo_dir_execute ./ 'echo -ne \"{}\t\" && git -C {} branch --show-current' | column -t"
 alias gad='git add'
 alias gcm='git commit -m'
