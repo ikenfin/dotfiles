@@ -1,0 +1,36 @@
+[window]
+
+padding = { x = 8, y = 4 }
+dynamic_padding = true
+
+[font]
+normal = { family = "Hack NF" }
+size = 12.0
+offset = { x = 0, y = 5 }
+
+[cursor]
+style = { shape = "Underline" }
+
+[colors]
+primary = { foreground = "#FCFCFC", background = "#141414" }
+
+normal.black = "#31363B"
+bright.black = "#7F8C8D"
+normal.red = "#783228"
+bright.red = "#F0392B"
+normal.green = "#1DDA99"
+bright.green = "#1BCAB1"
+normal.yellow = "#B65610"
+bright.yellow = "#FDBC4B"
+normal.blue = "#1D99F3"
+bright.blue = "#3DAEE9"
+normal.magenta = "#614A73"
+bright.magenta = "#8E44AD"
+normal.cyan = "#409b9a"
+bright.cyan = "#00d0b3"
+#normal.cyan = "#169E83"
+#bright.cyan = "#16A085"
+normal.white = "#63686D"
+bright.white = "#FFFFFF"
+
+draw_bold_text_with_bright_colors = true
