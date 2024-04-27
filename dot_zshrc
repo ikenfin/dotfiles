@@ -18,6 +18,8 @@ bindkey -e
 
 # Add .local/bin to PATH
 PATH="${PATH}:${HOME}/.local/bin"
+# Add neovim to PATH
+PATH="${PATH}:/opt/nvim-linux64/bin"
 
 # Load bash aliases
 [[ -s ${HOME}/.bash_alias ]] && source ${HOME}/.bash_alias
@@ -41,3 +43,5 @@ bindkey "[1;5D" backward-word
 
 
 
+
+PATH=~/.console-ninja/.bin:$PATH
