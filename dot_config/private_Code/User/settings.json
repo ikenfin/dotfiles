@@ -1,0 +1,153 @@
+{
+  "yaml.schemas": {
+    "file:///Users/ken/.vscode/extensions/atlassian.atlascode-3.0.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "terminal.integrated.env.osx": {},
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.env.linux": {},
+  "editor.tabSize": 2,
+  "window.zoomLevel": 1,
+  "codesandbox.currentWorkspace": "f80fb85e-601a-429f-b5e2-f68f210941fb",
+  "git.openRepositoryInParentFolders": "never",
+  "[css]": {
+    "editor.defaultFormatter": "jonwolfe.prettier-eslint-formatter"
+  },
+  "editor.formatOnType": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "jonwolfe.prettier-eslint-formatter"
+  },
+  "editor.linkedEditing": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.guides.bracketPairs": true,
+  "editor.formatOnPaste": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/ken/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
+  "editor.fontFamily": "Hack NF, Victor Mono, Menlo, 'Droid Sans Mono', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Monokai Night",
+  "editor.tokenColorCustomizations": {
+    "[Monokai Night]": {
+      "keywords": {
+        "fontStyle": ""
+      },
+      "comments": {
+        "fontStyle": "bold",
+        "foreground": "#646d79"
+      },
+      "types": {
+        "foreground": "#2ee0ab",
+        "fontStyle": "bold"
+      },
+      "functions": {
+        "foreground": "#99e02e",
+        "fontStyle": "bold"
+      },
+      "textMateRules": [
+        {
+          "scope": "entity.other.inherited-class",
+          "settings": {
+            "foreground": "#2ee0ab",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "variable.language.super",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "storage.modifier",
+          "settings": {
+            "foreground": "#66D9EF",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.control",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "string.quoted",
+          "settings": {
+            "foreground": "#f2e288",
+          }
+        },
+        {
+          "scope": "support.type.property-name",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+  "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "intelephense.format.braces": "k&r",
+  "console-ninja.featureSet": "Community",
+  "php.format.codeStyle": "Laravel",
+  "tabnine.experimentalAutoImports": true,
+  "bitoAI.codeCompletion.setAutoCompletionTriggerLogic": 250,
+  "bitoAI.codeCompletion.enableAutoCompletion": true,
+  "bitoAI.codeCompletion.enableCommentToCode": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "jonwolfe.prettier-eslint-formatter"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "jonwolfe.prettier-eslint-formatter"
+  },
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "gitlens.statusBar.enabled": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "editor.minimap.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "window.dialogStyle": "custom",
+  "workbench.activityBar.location": "hidden",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "prettier-eslint-formatter.enableDebugLogs": true,
+  "files.simpleDialog.enable": true,
+  "terminal.integrated.fontFamily": "Hack NF",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.4,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.tabs.showActions": "always",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#141414",
+    "terminal.foreground": "#FCFCFC",
+    "terminal.ansiBlack": "#31363B",
+    "terminal.ansiBrightBlack": "#7F8C8D",
+    "terminal.ansiRed": "#783228",
+    "terminal.ansiBrightRed": "#F0392B",
+    "terminal.ansiGreen": "#1DDA99",
+    "terminal.ansiBrightGreen": "#1BCAB1",
+    "terminal.ansiYellow": "#B65610",
+    "terminal.ansiBrightYellow": "#FDBC4B",
+    "terminal.ansiBlue": "#1D99F3",
+    "terminal.ansiBrightBlue": "#3DAEE9",
+    "terminal.ansiMagenta": "#614A73",
+    "terminal.ansiBrightMagenta": "#8E44AD",
+    "terminal.ansiCyan": "#169E83",
+    "terminal.ansiBrightCyan": "#16A085",
+    "terminal.ansiWhite": "#63686D",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+  }
+}
