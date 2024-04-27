@@ -76,7 +76,7 @@
         {
           "scope": "string.quoted",
           "settings": {
-            "foreground": "#f2e288",
+            "foreground": "#f2e288"
           }
         },
         {
@@ -148,6 +148,6 @@
     "terminal.ansiCyan": "#169E83",
     "terminal.ansiBrightCyan": "#16A085",
     "terminal.ansiWhite": "#63686D",
-    "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminal.ansiBrightWhite": "#FFFFFF"
   }
 }
