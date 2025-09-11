@@ -1,0 +1,58 @@
+
+/*box {
+  background-color: #332f40;
+}*/
+
+headerbar {
+  background-color: #2c283c;
+  background-image: none;
+}
+
+headerbar button {
+  background-color: #2c283c;
+  background-image: none;
+  border: none;
+}
+
+headerbar button:checked {
+  background-color: #48445e;
+}
+
+popover {
+  background-color: #2c283c;
+}
+
+window > box {
+  background-color: #2c283c;
+}
+
+text {
+  background-color: #2c283c;
+}
+
+notebook, notebook box {
+  background-color: #2c283c;
+}
+
+tabs {
+  background-color: #2c283c;
+}
+
+stackswitcher button {
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+stackswitcher button:hover {
+  background-color: #48445e;
+}
+
+header tabs tab:hover {
+  background-color: #48445e;
+}
+
+button, combobox button {
+  border-left-color: rgb(32,32,32);
+  border-right-color: rgb(32,32,32);
+  background-image: none;
+}
