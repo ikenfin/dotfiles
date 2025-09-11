@@ -4,15 +4,16 @@ padding = { x = 8, y = 4 }
 dynamic_padding = true
 
 [font]
-normal = { family = "Hack NF" }
-size = 13.5
+normal = { family = "HackNerdFont" }
+size = 12.5
 offset = { x = 0, y = 5 }
 
 [cursor]
 style = { shape = "Underline" }
 
 [colors]
-primary = { foreground = "#FCFCFC", background = "#141414" }
+#primary = { foreground = "#FCFCFC", background = "#161624" }
+primary = { foreground = "#FCFCFC", background = "#211e2f" }
 
 normal.black = "#31363B"
 bright.black = "#7F8C8D"
