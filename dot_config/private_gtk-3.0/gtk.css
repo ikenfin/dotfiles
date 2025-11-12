@@ -1,14 +1,59 @@
-
 /*box {
   background-color: #332f40;
 }*/
+placessidebar {
+  background-color: #2c283c;
+  color: #fff;
+}
+
+placessidebar row {
+  color: #fff;
+}
+
+placessidebar row revealer:active {}
+
+revealer box { background-color: #2c283c; }
+
+menu {
+  background-color: #2c283c;
+  color: #fff;
+}
+
+revealer box { background-color: #2c283c; }
+placessidebar row:selected { background-color: #2c283c; }
+placessidebar row { margin-top: 3px; }
+placessidebar row box { padding: 10px; }
+placessidebar row:selected box { 
+  background-color: #4a3376; 
+  border-radius: 5px; 
+}
+
+menubar {
+  background-color: #2c283c;
+}
+
+treeview {
+  background-color: #2c283c;
+  color: #fff;
+}
+
+treeview header {
+  background-color: #2c283c;
+  color: #fff;
+}
+
+treeview header button {
+  background-color: #2c283c;
+}
 
 headerbar {
   background-color: #2c283c;
+  color: #fff;
   background-image: none;
 }
 
 headerbar button {
+  color: #fff;
   background-color: #2c283c;
   background-image: none;
   border: none;
@@ -20,21 +65,39 @@ headerbar button:checked {
 
 popover {
   background-color: #2c283c;
+  color: #fff;
+}
+
+dialog {
+  background-color: #2c283c;
+}
+
+messagedialog {
+  background-color: #2c283c;
+  color: #fff;
+}
+messagedialog .titlebar {
+  background-color: #2c283c;
+  color: #fff;
 }
 
 window > box {
   background-color: #2c283c;
+  color: #fff;
 }
 
 text {
   background-color: #2c283c;
+  color: #fff;
 }
 
-notebook, notebook box {
+notebook, notebook box, notebook stack {
+  color: #fff;
   background-color: #2c283c;
 }
 
 tabs {
+  color: #fff;
   background-color: #2c283c;
 }
 
@@ -44,15 +107,31 @@ stackswitcher button {
 }
 
 stackswitcher button:hover {
+  color: #fff;
   background-color: #48445e;
 }
 
 header tabs tab:hover {
+  color: #fff;
   background-color: #48445e;
 }
 
 button, combobox button {
-  border-left-color: rgb(32,32,32);
-  border-right-color: rgb(32,32,32);
+  border-color: #493f71;
+  outline: none;
+  box-shadow: none;
+  border-left-color: rgb(32,32,32) !important;
+  border-right-color: rgb(32,32,32) !important;
   background-image: none;
+  color: #fff;
 }
+
+button:disabled {
+  color: #ddd;
+}
+
+table {
+  background: #000;
+}
+
+
