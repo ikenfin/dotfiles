@@ -31,6 +31,7 @@ alias dcs='docker compose start'
 alias dcps='docker compose ps'
 alias dcl='docker compose logs'
 alias dclf='docker compose logs -f --tail=50'
+alias dcr='docker compose restart'
 
 # git aliases
 alias rgls="__for_each_nested_git_repo_dir_execute ./ 'echo {} && git -C {} status -s'"
