@@ -1,8 +1,29 @@
-/*box {
-  background-color: #332f40;
-}*/
-placessidebar {
+headerbar { 
+  border-top: 1px solid #2c283c;
+  border-bottom: none;
+  box-shadow: none; 
   background-color: #2c283c;
+  background-image: none;
+  padding: 0 5px;
+}
+
+window, scrolledwindow {
+  color: #fff;
+  background-color: #211e2f;
+}
+
+window decoration { 
+  border: 1px solid #2c283c; 
+  box-shadow: 0 0 5px 4px rgba(30,30,30, .4); 
+}
+
+widget frame border {
+  border-color: #4c4859; 
+  border-radius: 6px;
+}
+
+placessidebar {
+  background-color: transparent; /* #2c283c; */
   color: #fff;
 }
 
@@ -12,15 +33,20 @@ placessidebar row {
 
 placessidebar row revealer:active {}
 
-revealer box { background-color: #2c283c; }
+paned separator { background-color: #4a3376; }
+
+revealer box { background-color: transparent; /* #2c283c; */ }
+
+/* Searchbox + Footer in dialog */
+dialog revealer > box { border-bottom: 1px solid #493f71; background-color: #24232f; }
 
 menu {
-  background-color: #2c283c;
+  background-color: transparent; /* #2c283c; */
   color: #fff;
 }
 
-revealer box { background-color: #2c283c; }
-placessidebar row:selected { background-color: #2c283c; }
+revealer box { background-color: transparent; }
+placessidebar row:selected { background-color: transparent; }
 placessidebar row { margin-top: 3px; }
 placessidebar row box { padding: 10px; }
 placessidebar row:selected box { 
@@ -29,27 +55,32 @@ placessidebar row:selected box {
 }
 
 menubar {
-  background-color: #2c283c;
+  background-color: transparent;
 }
 
 treeview {
-  background-color: #2c283c;
+  background-color: transparent;
   color: #fff;
 }
 
-treeview header {
+treeview:selected {
   background-color: #2c283c;
+}
+
+treeview header {
+  background-color: transparent;
   color: #fff;
 }
 
 treeview header button {
-  background-color: #2c283c;
+  background-color: transparent;
 }
 
 headerbar {
-  background-color: #2c283c;
   color: #fff;
-  background-image: none;
+}
+headerbar:backdrop {
+  color: #777;
 }
 
 headerbar button {
@@ -70,6 +101,11 @@ popover {
 
 dialog {
   background-color: #2c283c;
+}
+
+dialog placesview list { 
+  background-color: #2c283c;
+  color: #fff;
 }
 
 messagedialog {
@@ -120,8 +156,8 @@ button, combobox button {
   border-color: #493f71;
   outline: none;
   box-shadow: none;
-  border-left-color: rgb(32,32,32) !important;
-  border-right-color: rgb(32,32,32) !important;
+  border-left-color: rgb(32,32,32);
+  border-right-color: rgb(32,32,32);
   background-image: none;
   color: #fff;
 }
